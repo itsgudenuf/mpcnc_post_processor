@@ -1,22 +1,26 @@
 /*
 
-https://github.com/guffy1234/mpcnc_posts_processor
+Original: https://github.com/guffy1234/mpcnc_posts_processor
+Forked: https://github.com/flyfisher604/mpcnc_post_processor
+
+BW - Applied my own touches of course
 
 MPCNC posts processor for milling and laser/plasma cutting.
 
 */
 
 description = "MPCNC Milling/Laser - Marlin 2.0, Grbl 1.1, RepRap";
-vendor = "flyfisher604";
-vendorUrl = "https://github.com/flyfisher604/mpcnc_post_processor";
+vendor = "itsgudenuf";
+vendorUrl = "https://github.com/itsgudenuf/mpcnc_post_processor";
 
 // Internal properties
 certificationLevel = 2;
-extension = "gcode";
+extension = "nc";
 setCodePage("ascii");
 capabilities = CAPABILITY_MILLING | CAPABILITY_JET;
 
-machineMode = undefined; //TYPE_MILLING, TYPE_JET
+//machineMode = undefined; //TYPE_MILLING, TYPE_JET
+machineMode = TYPE_MILLING;
 
 var eFirmware = {
     MARLIN: 0,
@@ -29,7 +33,9 @@ var eFirmware = {
     }
   };
 
-var fw =  eFirmware.MARLIN; 
+//var fw =  eFirmware.MARLIN; 
+var fw = eFirmware.GRBL;
+
 
 var eComment = {
     Off: 0,
