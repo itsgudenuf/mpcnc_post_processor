@@ -1,6 +1,11 @@
 THIS IS A COPY OF A COPY OF A COPY OF A COPY OF A COPY!!!  
 ===  
-  
+
+I'm using this with a FoxAlien CL-6560 until I can convert it to Mach or LinuxCNC.  
+The changes I've made are for my particular needs.  
+NOTE: This all started when I wanted to drill some holes with the CNC. Damm it GRBL!!!!  
+
+
 Fusion 360 CAM posts processor for MPCNC 
 ====
 
